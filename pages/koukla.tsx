@@ -128,6 +128,7 @@ function Page() {
           <div className="grid gap-2 h-[87vh]  overflow-y-auto grid-cols-6">
             {list.map((a) => (
               <div
+                key={a.src}
                 onClick={() => setPhoto(a.src)}
                 className="bg-slate-600 border hover:border-amber-400 cursor-pointer h-full w-full"
               >
